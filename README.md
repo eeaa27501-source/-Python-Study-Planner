@@ -1,27 +1,15 @@
-# Python Study Planner
+# Python Study Planner — Web App
 
-## Purpose
-A beginner-friendly study and homework organizer built with Python.
+A browser-based study planner built with Python and Streamlit.
 
-## Features
-- Add a task, subject, and optional due date
-- View all tasks
-- Mark a task complete
-- Calculate completion progress
-- Save tasks locally in `tasks.json`
+## Run locally
+1. Install Python 3.10 or newer.
+2. Open a terminal in this folder.
+3. Run: `pip install -r requirements.txt`
+4. Run: `streamlit run app.py`
 
-## Run
-Install Python 3.10 or newer from https://www.python.org/downloads/
-Open a terminal in this folder and run:
-`python study_planner.py`
+## Deploy
+Push this folder's contents to the GitHub repository. On Streamlit Community Cloud, create a new app, select this repository and branch `main`, and set the main file path to `app.py`.
 
-## Test checklist
-1. Add one task with a title and subject.
-2. View tasks and check it appears.
-3. Mark the task complete.
-4. Open progress summary and confirm it shows 100% for one completed task.
-5. Exit and reopen the program; confirm the task is still saved.
-6. Try an invalid menu choice and an empty title.
-
-## Future improvements
-A graphical interface, subject filters, reminders, and export to CSV.
+## Note
+This demo stores tasks in Streamlit session state, so tasks are temporary and may reset when the session ends or the app restarts. It is not a permanent database.
